@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWell Project</title>
+    <!-- Use Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="container mx-auto">
+        <!-- Header with back button -->
+        <header class="flex items-center justify-between py-6">
+            <a href="resume_portfolio.html" class="flex items-center space-x-2 text-gray-400 hover:text-teal-400 transition-colors font-semibold">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                </svg>
+                <span>Back to Portfolio</span>
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold text-white">SpendWell</h1>
+            <div></div> <!-- Empty div for spacing -->
+        </header>
+
+        <!-- Project Details Section -->
+        <section class="bg-[#161B22] p-6 md:p-10 rounded-xl shadow-lg mb-8 md:mb-12 border border-[#21262d]">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-teal-400">Project Overview</h2>
+            <p class="text-gray-300 text-base md:text-lg mb-6">
+                SpendWell is an AI-powered finance coach and expense tracker designed to help individuals make better financial decisions. By analyzing users' spending patterns and financial goals, the app offers personalized financial advice and proactive recommendations. The platform aims to simplify budgeting, savings, and investment management with cutting-edge technology.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-between mb-6">
+                <h3 class="text-xl md:text-2xl font-bold text-teal-400">Key Features</h3>
+                <a href="SpendWell.pdf" target="_blank" class="mt-4 md:mt-0 bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-6 rounded-full transition-colors duration-300 shadow-md">View PDF</a>
+            </div>
+            <ul class="list-disc list-inside space-y-4 text-gray-300 text-base md:text-lg">
+                <li>**Personalized Financial Dashboard:** Overview of income, expenses, savings, and financial goals.</li>
+                <li>**AI-Powered Chatbot:** Leverages the Gemini API to answer financial questions and provide advice based on user data.</li>
+                <li>**Expense Categorization:** Automatically classifies expenditures for better tracking and identifies areas of overspending.</li>
+                <li>**Budgeting & Alerts:** Users can set budgets and receive proactive alerts for potential overspending or insufficient savings.</li>
+                <li>**Savings Goals:** Set and track progress toward personal savings and investment goals.</li>
+                <li>**Financial Reports:** Visual reports that show spending patterns, savings progress, and more.</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 mt-8 text-gray-500 text-sm">
+            <p>&copy; 2024 Anubhav Chaudhary. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
